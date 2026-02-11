@@ -1,0 +1,152 @@
+/* ===== NEO BRUTALIST UPDATE PAGE ===== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background-color:#f0e7d6;
+    font-family:'Patrick Hand', cursive;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:30px;
+}
+
+/* Main Board */
+.memo-board{
+    width:650px;
+    background:#fffef0;
+    border:12px solid #4a3c31;
+    padding:50px 40px;
+    position:relative;
+    box-shadow:20px 20px 0 #8b6f4e;
+}
+
+/* Punch Holes */
+.punch-hole{
+    position:absolute;
+    width:20px;
+    height:20px;
+    background:#d9caba;
+    border:5px solid #4a3c31;
+    border-radius:50%;
+    top:15px;
+    left:50%;
+    transform:translateX(-50%);
+}
+
+.punch-hole.left{
+    left:30px;
+    transform:none;
+}
+
+.punch-hole.right{
+    left:auto;
+    right:30px;
+    transform:none;
+}
+
+/* Tape */
+.tape{
+    position:absolute;
+    width:120px;
+    height:30px;
+    background:rgba(232, 222, 198, 0.8);
+    top:-15px;
+    left:50%;
+    transform:translateX(-50%) rotate(-3deg);
+}
+
+/* Heading */
+h1{
+    text-align:center;
+    font-size:3rem;
+    letter-spacing:5px;
+    text-transform:uppercase;
+    margin-bottom:40px;
+    text-shadow:6px 6px 0 #87ceeb; /* blue shade for update */
+}
+
+/* Fieldset */
+fieldset{
+    border:8px dashed #2d4055;
+    padding:35px;
+}
+
+legend{
+    font-size:1.8rem;
+    font-weight:bold;
+}
+
+/* Labels */
+label{
+    display:block;
+    margin-top:15px;
+    font-size:1.3rem;
+}
+
+/* Inputs */
+input{
+    width:100%;
+    padding:12px;
+    margin-top:8px;
+    border:5px solid #2b3a4a;
+    font-family:'Space Mono', monospace;
+    font-size:1rem;
+}
+
+/* Button Group */
+.btn-group{
+    margin-top:25px;
+}
+
+/* Buttons */
+button{
+    padding:12px 25px;
+    font-size:1.2rem;
+    border:5px solid #2b3a4a;
+    cursor:pointer;
+    margin-right:15px;
+    font-family:'Patrick Hand';
+    transition:0.1s ease;
+}
+
+.submit-btn{
+    background:#b3e5ff; /* light blue for update */
+}
+
+.cancel-btn{
+    background:#ffb3b3;
+}
+
+button:hover{
+    transform:scale(0.95);
+    box-shadow:8px 8px 0 #2b3a4a;
+}
+.search-btn{
+    background:#b9fbc0;
+}
+
+.success-box{
+    margin-top:25px;
+    padding:15px;
+    border:5px solid #2b3a4a;
+    background:#d4edda;
+    font-family:'Space Mono',monospace;
+    font-weight:bold;
+    text-align:center;
+}
+.error-box{
+    margin-top:20px;
+    padding:15px;
+    border:5px solid #2b3a4a;
+    background:#ffcccc;
+    font-family:'Space Mono', monospace;
+    font-weight:bold;
+    text-align:center;
+    color:#b30000;
+}

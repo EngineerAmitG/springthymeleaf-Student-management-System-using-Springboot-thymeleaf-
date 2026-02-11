@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Insert Student</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- External CSS -->
+  <link rel="stylesheet" th:href="@{/css/insert.css}">
+  <link rel="stylesheet" th:href="@{/css/footer.css}">
+
+</head>
+<body>
+
+<div class="memo-board">
+
+  <!-- Binder Holes -->
+  <div class="punch-hole"></div>
+  <div class="punch-hole left"></div>
+  <div class="punch-hole right"></div>
+
+  <!-- Tape -->
+  <div class="tape"></div>
+
+  <h1>➕ ADD STUDENT</h1>
+
+  <form th:action="@{/insert}" method="post">
+
+    <fieldset>
+      <legend>Insertion Page</legend>
+
+      <label>Enter Name :</label>
+      <input type="text" name="name" placeholder="Enter name" required>
+
+      <label>Enter Email :</label>
+      <input type="email" name="email" placeholder="Enter email" required>
+
+      <label>Enter Age :</label>
+      <input type="number" name="age" placeholder="Enter age" required>
+
+      <div class="btn-group">
+        <button type="submit" class="submit-btn">Submit</button>
+        <button type="button"
+                class="cancel-btn"
+                onclick="window.location.href='/home'">
+          Cancel
+        </button>
+
+      </div>
+
+    </fieldset>
+
+  </form>
+  <div th:fragment="devFooter" class="dev-signature">
+    <div class="dev-sticker">
+      Developed by EngineerG
+      <div class="washi-tape"></div>
+
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>

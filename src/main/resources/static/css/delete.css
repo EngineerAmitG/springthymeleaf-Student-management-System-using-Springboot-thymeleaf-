@@ -1,0 +1,109 @@
+*{margin:0;padding:0;box-sizing:border-box;}
+
+body{
+    background:#f0e7d6;
+    font-family:'Patrick Hand',cursive;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    padding:30px;
+}
+
+.memo-board{
+    width:600px;
+    background:#fffef0;
+    border:12px solid #4a3c31;
+    padding:50px;
+    position:relative;
+    box-shadow:20px 20px 0 #a13d3d;
+}
+
+.punch-hole{
+    position:absolute;
+    width:20px;height:20px;
+    background:#d9caba;
+    border:5px solid #4a3c31;
+    border-radius:50%;
+    top:15px;left:50%;
+    transform:translateX(-50%);
+}
+
+.punch-hole.left{left:30px;transform:none;}
+.punch-hole.right{left:auto;right:30px;transform:none;}
+
+.tape{
+    position:absolute;
+    width:120px;height:30px;
+    background:rgba(232,222,198,0.8);
+    top:-15px;left:50%;
+    transform:translateX(-50%) rotate(-3deg);
+}
+
+h1{
+    text-align:center;
+    font-size:3rem;
+    margin-bottom:40px;
+    letter-spacing:4px;
+    text-shadow:6px 6px 0 #ff6b6b;
+}
+
+fieldset{
+    border:8px dashed #2d4055;
+    padding:35px;
+}
+
+label{
+    display:block;
+    margin-top:15px;
+    font-size:1.3rem;
+}
+
+input{
+    width:100%;
+    padding:12px;
+    margin-top:8px;
+    border:5px solid #2b3a4a;
+    font-family:'Space Mono',monospace;
+}
+
+.btn-group{margin-top:25px;}
+
+button{
+    padding:12px 25px;
+    font-size:1.2rem;
+    border:5px solid #2b3a4a;
+    cursor:pointer;
+    margin-right:15px;
+    font-family:'Patrick Hand';
+}
+
+.delete-btn{background:#ff6b6b;color:white;}
+.cancel-btn{background:#ffb3b3;}
+
+button:hover{
+    transform:scale(0.95);
+    box-shadow:8px 8px 0 #2b3a4a;
+}
+.success-box{
+    margin-top:25px;
+    padding:15px;
+    border:5px solid #2b3a4a;
+    background:#d4edda;
+    font-family:'Space Mono',monospace;
+    font-weight:bold;
+    text-align:center;
+}
+.error-box{
+    margin-top:20px;
+    padding:15px;
+    border:5px solid #2b3a4a;
+    background:#ffcccc;
+    font-family:'Space Mono', monospace;
+    font-weight:bold;
+    text-align:center;
+    color:#b30000;
+}
+.cancel-btn{
+    background:#ffb3b3;
+}

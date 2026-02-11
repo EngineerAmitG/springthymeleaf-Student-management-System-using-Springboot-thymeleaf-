@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Delete Student</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" th:href="@{/css/delete.css}">
+  <link rel="stylesheet" th:href="@{/css/footer.css}">
+</head>
+<body>
+
+<div class="memo-board">
+
+  <div class="punch-hole"></div>
+  <div class="punch-hole left"></div>
+  <div class="punch-hole right"></div>
+  <div class="tape"></div>
+
+  <h1>🗑 DELETE STUDENT</h1>
+
+  <form th:action="@{/delete}" method="post">
+
+    <fieldset>
+      <legend>Remove Record</legend>
+
+      <label>Enter Student ID :</label>
+      <input type="number"
+             name="id"
+             placeholder="Enter ID"
+             required>
+
+      <div class="btn-group">
+        <button type="submit" class="delete-btn">Delete</button>
+
+        <button type="button"
+                class="cancel-btn"
+                onclick="window.location.href='/home'">
+          Cancel
+        </button>
+      </div>
+    </fieldset>
+
+  </form>
+
+  <!-- SUCCESS MESSAGE -->
+  <div th:if="${successMessage}" class="success-box">
+    <p th:text="${successMessage}"></p>
+  </div>
+
+  <!-- ERROR MESSAGE -->
+  <div th:if="${errorMessage}" class="error-box">
+    <p th:text="${errorMessage}"></p>
+  </div>
+
+
+  <!-- Footer -->
+  <div class="dev-signature">
+    <div class="dev-sticker">
+      👷‍♂️ Developed by EngineerG
+      <div class="washi-tape"></div>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>

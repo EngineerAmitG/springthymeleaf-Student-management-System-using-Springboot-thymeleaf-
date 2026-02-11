@@ -1,0 +1,183 @@
+/* ===== NEO BRUTALIST INSERT PAGE ===== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background-color:#f0e7d6;
+    font-family:'Patrick Hand', cursive;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:30px;
+}
+
+/* Main Board */
+.memo-board{
+    width:650px;
+    background:#fffef0;
+    border:12px solid #4a3c31;
+    padding:50px 40px;
+    position:relative;
+    box-shadow:20px 20px 0 #ab8e6a;
+}
+
+/* Punch Holes */
+.punch-hole{
+    position:absolute;
+    width:20px;
+    height:20px;
+    background:#d9caba;
+    border:5px solid #4a3c31;
+    border-radius:50%;
+    top:15px;
+    left:50%;
+    transform:translateX(-50%);
+}
+
+.punch-hole.left{
+    left:30px;
+    transform:none;
+}
+
+.punch-hole.right{
+    left:auto;
+    right:30px;
+    transform:none;
+}
+
+/* Tape */
+.tape{
+    position:absolute;
+    width:120px;
+    height:30px;
+    background:rgba(232, 222, 198, 0.8);
+    top:-15px;
+    left:50%;
+    transform:translateX(-50%) rotate(-3deg);
+}
+
+/* Heading */
+h1{
+    text-align:center;
+    font-size:3rem;
+    letter-spacing:5px;
+    text-transform:uppercase;
+    margin-bottom:40px;
+    text-shadow:6px 6px 0 #ffb347;
+}
+
+/* Fieldset */
+fieldset{
+    border:8px dashed #2d4055;
+    padding:35px;
+}
+
+legend{
+    font-size:1.8rem;
+    font-weight:bold;
+}
+
+/* Labels */
+label{
+    display:block;
+    margin-top:15px;
+    font-size:1.3rem;
+}
+
+/* Inputs */
+input{
+    width:100%;
+    padding:12px;
+    margin-top:8px;
+    border:5px solid #2b3a4a;
+    font-family:'Space Mono', monospace;
+    font-size:1rem;
+}
+
+/* Button Group */
+.btn-group{
+    margin-top:25px;
+}
+
+/* Buttons */
+button{
+    padding:12px 25px;
+    font-size:1.2rem;
+    border:5px solid #2b3a4a;
+    cursor:pointer;
+    margin-right:15px;
+    font-family:'Patrick Hand';
+    transition:0.1s ease;
+}
+
+.submit-btn{
+    background:#ffec99;
+}
+
+.cancel-btn{
+    background:#ffb3b3;
+}
+
+button:hover{
+    transform:scale(0.95);
+    box-shadow:8px 8px 0 #2b3a4a;
+}
+/* ===== ENGINEER FOOTER STYLE ===== */
+
+.dev-signature {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 40px;
+    font-family: 'Space Mono', monospace;
+    position: relative;
+}
+
+.dev-sticker {
+    background: #e8d2b0;
+    border: 6px double #3e4c4a;
+    padding: 12px 28px;
+    transform: rotate(-1.5deg);
+    box-shadow: 12px 12px 0 #5a4c3a;
+    display: inline-block;
+    border-radius: 30px 8px 30px 8px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #1e3a3a;
+    letter-spacing: 3px;
+    position: relative;
+    transition: all 0.1s ease;
+}
+
+.dev-sticker:hover {
+    transform: rotate(0deg) scale(0.98);
+    background: #f3e5c9;
+    box-shadow: 6px 6px 0 #3e5a5a;
+}
+
+.dev-sticker span {
+    font-family: 'Patrick Hand', cursive;
+    font-size: 1.7rem;
+    margin-right: 8px;
+}
+
+.washi-tape {
+    position: absolute;
+    bottom: -8px;
+    left: 10%;
+    width: 80px;
+    height: 15px;
+    background: rgba(220,200,160,0.7);
+    transform: rotate(-2deg);
+}
+
+.hand-arrow {
+    font-size: 1.5rem;
+    transform: rotate(-10deg);
+    display: inline-block;
+    margin-left: 5px;
+}
