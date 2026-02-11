@@ -112,7 +112,7 @@ http://localhost:8081/home
 📸 Screenshots
 (Add screenshots here later)
 
-##🎯 Learning Outcomes
+## 🎯 Learning Outcomes
 Spring MVC flow understanding
 
 Form handling with Thymeleaf
@@ -125,8 +125,8 @@ Exception handling
 
 Clean project structure
 
-##👷 Developed By
+## 👷 Developed By
 EngineerG
 
-##📄 License
+## 📄 License
 This project is for educational purposes.
